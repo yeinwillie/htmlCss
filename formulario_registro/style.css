@@ -50,6 +50,7 @@ textarea::-webkit-scrollbar-thumb{
   }
 
   .formulario__input-error-activo {
+    color: #d30d0d;
     margin-top: 2px; 
     font-size: 12px;
     margin-bottom: 0;

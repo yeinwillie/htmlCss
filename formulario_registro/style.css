@@ -100,7 +100,7 @@ textarea::-webkit-scrollbar-thumb{
    
 }
 
-.formulario__mensaje-activo p{
+.formulario__mensaje-activo {
     display: block;
 }
  

@@ -1,0 +1,78 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 600px) {
+
+    /*para destaques*/
+
+    /*.destaques__secundario:nth-child(2){
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+
+    .destaques__secundario:nth-child(3){
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+
+    .destaques__secundario:nth-child(4){
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+
+    .destaques__secundario:nth-child(5){
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }*/
+
+    /*las lineas de arriba se puede optimizar a (colocando las clases separadas por coma)*/
+
+    .destaques__secundario:nth-child(2), .destaques__secundario:nth-child(3), .destaques__secundario:nth-child(4), .destaques__secundario:nth-child(5){
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+
+ /*   .destaques__principal {
+        grid-column-start: 1 ; /* indica donde comenzara el background en que columan
+        grid-column-end: 5; /* indica donde comenzara el background en que columna, toma hasta la linea 3 pero se coloca la 4
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }*/
+
+/* para categorias
+
+.destaques__categorias{
+    grid-column: 1/5;
+    /* grid-row: 3/4; si sigue igual no es necesario colocarlo
+}*/
+
+/* se puede optimizar asi*/
+
+.destaques__principal, .destaques__categorias {
+    grid-column: 1/5;
+}
+
+/*para populares*/
+
+.populares__contenido{
+   flex-direction: column;
+}
+
+.populares__card{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...}*/

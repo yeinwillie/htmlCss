@@ -1,0 +1,32 @@
+.content{
+    /*background-color: wheat;*/
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.content__title{
+    color: #8d0606;
+    font-family: Pacifico, cursive;
+    font-size: 3.1875rem;
+}
+
+.content__description {
+    color: #595959;
+    font-size: 1.75rem;
+    font-weight: 100;
+
+}
+
+@media screen  and (max-width: 768px){
+    .content{
+        padding: 2.5rem 1rem; 
+}
+
+.content__title{
+    font-size: 2rem;
+}
+
+.content__description {
+    font-size: 1.3rem;
+}
+}

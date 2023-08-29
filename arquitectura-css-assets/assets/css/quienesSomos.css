@@ -1,0 +1,76 @@
+.quienes-somos{
+    text-align: center;
+    padding: 5rem;
+}
+.quienes-somos__titulo{
+
+    color: #8d0606;
+    margin-bottom: 0.1rem;
+    font-size: 3.1875rem;
+    font-family: Pacifico, cursive;
+}
+
+.quienes-somos__descripcion{
+    color: #595959;
+    font-weight: 100;
+    font-size: 1.75rem;    
+}
+
+.persona{
+    display: flex;
+    flex-direction: column;   
+    align-items: center; 
+}
+
+.persona__nombre{
+    color:#8d0606;
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-family: Pacifico, cursive;    
+}
+
+.persona__funcion{
+    text-transform: lowercase;
+    color:#595959;
+    font-size: 1.25rem;
+}
+
+.personas{
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-around;
+}
+
+.persona__imagen--roberta{
+    background: url(../img/personas/roberta.jpg);
+}
+
+.persona__imagen--marcela{
+    background: url(../img/personas/marcela.jpg);
+}
+
+.persona__imagen--andrea{
+    background: url(../img/personas/andrea.jpg) no-repeat center / cover; /*si se escribe aca ytoma las tres propiedades*/
+}
+.persona__imagen{
+
+    background-position: center;
+    background-repeat: no-repeat;    
+    background-size: cover;
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;    
+    width: 300px;
+    
+}
+
+@media screen  and (max-width: 768px){
+    
+    .persona{
+       margin-bottom: 1rem;
+    }
+
+    .personas{
+        flex-direction: column;
+    }
+}

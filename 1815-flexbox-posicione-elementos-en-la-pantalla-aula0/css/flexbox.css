@@ -1,0 +1,174 @@
+/* centrando el header*/
+
+.headerPrincipal .container {
+    display: flex;
+    /* alinea todo dentro del container uno al lado del otro*/
+    align-items: center;
+    /* alinea todos los elementos dentro del container en el centro*/
+    justify-content: space-between;
+    /* crea un espacio entre los elementos*/
+
+}
+
+.headerPrincipal-nav {
+    display: flex;
+    /* posiciona los elementos dentro del nav uno al lado del otro*/
+    /* no se coloca espacio entre ellos porque ya lo habian colocado*/
+
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/* posicionando el footer mejor explicado en notion*/
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-legend {
+    margin-left: 15%;
+
+}
+
+/* posicionando el mapa de cursos mejor explicado en notion */
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    flex-wrap: wrap;
+    margin-left: 4%;
+    /* espacio izquierdo en los cursos para que queden mas centrados*/
+
+}
+
+/*posicionando nuestros cursos*/
+
+.contenidoPrincipal-cursos {
+    display: flex;
+    /* deberia posicionar lo elemento como una grid pero como tienen internamente posicionamiento absoluto no lo hace*/
+
+    flex-wrap: wrap;
+    /* deberia posicionar lo elemento como una grid pero como tienen internamente posicionamiento absoluto no lo hace*/
+
+}
+
+.contenidoPrincipal-cursos-link {
+    display: flex;
+    /* ayuda con el posiiconamiento absoluto de los li*/
+    width: 23%;
+    /* ayuda con el posiiconamiento absoluto de los li*/
+}
+
+/*posicionando el video y el boton de suscribir*/
+
+.videoSobre .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.videoSobre-video{
+    flex-grow: 0.4;
+    flex-shrink: 0.4;
+}
+
+.videoSobre-sobre {
+
+    text-align: center;
+
+}
+
+.videoSobre-button {
+    margin-top: 10%;
+    width: 100%;
+}
+
+/*responsive*/
+
+/*mediaquery*/
+
+@media (max-width:768px) {
+
+
+
+    /*header*/
+
+    .headerPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        /* vuelve la alineacion de los item a su forma initial borrando la anterior antes del responsive*/
+        text-align: center;
+    }
+
+    .headerPrincipal-nav {
+        flex-direction: column;
+    }
+
+    /*nuestros cursos*/
+
+    .ontenidoPrincipal-cursos {
+        flex-direction: column;
+
+    }
+
+    .contenidoPrincipal-cursos-link {
+        display: flex;
+        /* ayuda con el posiiconamiento absoluto de los li*/
+        width: 100%;
+        /* ayuda con el posiiconamiento absoluto de los li*/
+    }
+
+    /*mapa de cursos*/
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+        flex-wrap: nowrap;
+    }
+
+    /*footer*/
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-legend {
+        margin-left: 0%;
+
+    }
+
+    /*posicionando el video y el boton de suscribir*/
+
+    .videoSobre .container {
+        flex-direction: column;
+
+    }
+
+    .headerPrincipal-nav-link-app{
+        order: -1;
+    }
+
+    
+}
